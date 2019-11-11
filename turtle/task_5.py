@@ -1,5 +1,6 @@
 import turtle
 
+turtle.shape('turtle')
 def draw_square(n):
     """ n - side length
     """

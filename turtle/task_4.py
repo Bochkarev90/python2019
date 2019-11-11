@@ -1,5 +1,6 @@
 import turtle
 
+turtle.shape('turtle')
 def print_circle(n):
     """ n - degree of rotation
     """
