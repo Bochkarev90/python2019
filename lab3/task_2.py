@@ -51,8 +51,20 @@ def ground(y, color='yellow'):
     rectangle(0, y, width, height)
 
 
-def umbrella(x, y, height):
-    pass
+def umbrella(x, y):
+    """
+    Draws an umbrella
+    :param x: distance from left edge
+    :param y: distance from ground
+    :return:
+    """
+    penColor(250, 128, 114)
+    brushColor(250, 128, 114)
+    rectangle(x-5, height-y, x+5, height/2+50)
+    brushColor(255, 140, 120)
+    polygon([
+        (x, height/2+40), (x-75, height/2+100), (x+75, height/2+100)
+    ])
 
 
 sky(height/2)
@@ -61,5 +73,6 @@ ground(height/4*3)
 sun(width-100, 100, 50)
 for _ in range(10):
     cloud(random.randint(100, 300), random.randint(100, 150), 10)
+umbrella(100, 30)
 
 run()
