@@ -1,7 +1,8 @@
 from graph import *
 import random
 
-windowSize(1000, 1000)
+windowSize(500, 600)
+print(windowSize())
 width, height = windowSize()
 
 
